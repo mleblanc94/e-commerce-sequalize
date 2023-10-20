@@ -16,7 +16,8 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
           model: Tag,
           as: 'tags',
           through: {
-            attributes: [] // To exclude the junction table attributes from the result
+            model: ProductTag,
+            attributes: ['id', 'product_id', 'tag_id'], // To exclude the junction table attributes from the result
           }
         }
       ],
