@@ -2,8 +2,8 @@ const router = require('express').Router();
 const { Product, Category, Tag, ProductTag } = require('../../models');
 
 // The `/api/products` endpoint
-    // find all products
-  // be sure to include its associated Category and Tag data
+// find all products
+// be sure to include its associated Category and Tag data
 
   router.get('/', async (req, res) => {
     try {
@@ -17,7 +17,7 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
           as: 'tags',
           through: {
             model: ProductTag,
-            attributes: ['id', 'product_id', 'tag_id'], // To exclude the junction table attributes from the result
+            attributes: ['id', 'product_id', 'tag_id'], // Specifies which values to return
           }
         }
       ],

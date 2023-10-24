@@ -43,6 +43,7 @@ router.post('/', (req, res) => {
       "category_name": "Basketball"
     }
   */
+ //Creates the new data for Category based off the req.body
   Category.create(req.body)
   .then((product) => {
     res.status(200).json(product);
@@ -53,6 +54,7 @@ router.post('/', (req, res) => {
   });
 });
 
+// Changes what is specified in the req.body based off which id the user enters
 router.put('/:id', async (req, res) => {
   // update a category by its `id` value
   try {
