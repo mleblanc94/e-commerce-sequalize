@@ -18,8 +18,7 @@ An application that allows users check the database of an e-commerce website and
 ## Usage
 
 ![image](https://github.com/mleblanc94/e-commerce-sequelize/assets/60248680/65941bd8-032f-462f-97f9-604af87b3b64)
-video walkthrough of the project: 
-
+video walkthrough of the project: https://drive.google.com/file/d/1XY6a12T8sKlfVoLs5T7ntBgG2o50MI3i/view
 
 - When the user enters in the routes in Insomnia described in the video, they will be allowed to read, update, add, or delete to the different tables that have been created to contain e-commerce data
 
